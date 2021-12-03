@@ -72,7 +72,7 @@ namespace CLR0312 {
 			this->ClientSize = System::Drawing::Size(661, 537);
 			this->Controls->Add(this->button1);
 			this->Cursor = System::Windows::Forms::Cursors::Default;
-			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"index";
 			this->Text = L"Главное окно";
