@@ -1,5 +1,6 @@
 #pragma once
 #include "Zad1.h"
+#include "zad2.h"
 namespace CLR0312 {
 
 	using namespace System;
@@ -35,6 +36,7 @@ namespace CLR0312 {
 			}
 		}
 	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ bz2;
 	protected:
 
 	private:
@@ -52,6 +54,7 @@ namespace CLR0312 {
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(index::typeid));
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->bz2 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -64,12 +67,23 @@ namespace CLR0312 {
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &index::button1_Click);
 			// 
+			// bz2
+			// 
+			this->bz2->Location = System::Drawing::Point(43, 131);
+			this->bz2->Name = L"bz2";
+			this->bz2->Size = System::Drawing::Size(182, 83);
+			this->bz2->TabIndex = 1;
+			this->bz2->Text = L"Задание 2";
+			this->bz2->UseVisualStyleBackColor = true;
+			this->bz2->Click += gcnew System::EventHandler(this, &index::bz2_Click);
+			// 
 			// index
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->ClientSize = System::Drawing::Size(661, 537);
+			this->Controls->Add(this->bz2);
 			this->Controls->Add(this->button1);
 			this->Cursor = System::Windows::Forms::Cursors::Default;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
@@ -83,6 +97,10 @@ namespace CLR0312 {
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		Zad1 eva;
 		eva.ShowDialog();
+	}
+	private: System::Void bz2_Click(System::Object^ sender, System::EventArgs^ e) {
+		zad2 z2;
+		z2.ShowDialog();
 	}
 	};
 }

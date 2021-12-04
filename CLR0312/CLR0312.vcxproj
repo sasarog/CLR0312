@@ -127,6 +127,9 @@
     <ClInclude Include="Zad1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="zad2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="index.resx">
@@ -134,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Zad1.resx">
       <DependentUpon>Zad1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zad2.resx">
+      <DependentUpon>zad2.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
